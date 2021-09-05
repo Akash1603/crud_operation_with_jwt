@@ -1,0 +1,289 @@
+{
+	"variables": [],
+	"info": {
+		"name": "practical_task",
+		"_postman_id": "b9472ee1-409d-4a15-b45a-86ac25b4f4b2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/token/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "akash",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "akash@123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create_category",
+			"request": {
+				"url": "http://127.0.0.1:8000/category/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODU1Mjk0LCJqdGkiOiJkYjU2MjFmMWM4Y2Y0Nzg3OGU0Y2YxZWU5YjdlMWRlZSIsInVzZXJfaWQiOjF9.BxSw1t2G4l5a9luKqATPKDFbESMxKshyT015FQJUsyw",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rubber",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_category",
+			"request": {
+				"url": "http://127.0.0.1:8000/category/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODU2Nzg4LCJqdGkiOiI1ZjNiMDQzNjM3ZWY0ZjdjOTEzYjRlNjUxNTA1N2EyOSIsInVzZXJfaWQiOjF9.x1LaGZBWj5OyBc8g5kOg-EG05yBihllVzmru6MIjSDQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "detail_category",
+			"request": {
+				"url": "http://127.0.0.1:8000/category/2/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUwMzg3LCJqdGkiOiIwOWFmYTk4ZWQyNDg0YTkxYjE4Y2M1ZjA1OGE3MmU0NCIsInVzZXJfaWQiOjF9.ZfrVdGlstZsPhoXeyXx0gWWfFiRL6JO8rZTbUModEiQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update_category",
+			"request": {
+				"url": "http://127.0.0.1:8000/category/2/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUwMzg3LCJqdGkiOiIwOWFmYTk4ZWQyNDg0YTkxYjE4Y2M1ZjA1OGE3MmU0NCIsInVzZXJfaWQiOjF9.ZfrVdGlstZsPhoXeyXx0gWWfFiRL6JO8rZTbUModEiQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pencil",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete_category",
+			"request": {
+				"url": "http://127.0.0.1:8000/category/2/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUwMzg3LCJqdGkiOiIwOWFmYTk4ZWQyNDg0YTkxYjE4Y2M1ZjA1OGE3MmU0NCIsInVzZXJfaWQiOjF9.ZfrVdGlstZsPhoXeyXx0gWWfFiRL6JO8rZTbUModEiQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create_product",
+			"request": {
+				"url": "http://127.0.0.1:8000/product/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODU2NzE3LCJqdGkiOiIxNGFiODY4NzFjZGE0ODEwYmRiMjk4ZjVkZWE1ODI0OCIsInVzZXJfaWQiOjF9.ayf_NJohz2tLN5eEjjiEE9-eihCUa8b53vV6ynG_UD8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Natraj",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_product",
+			"request": {
+				"url": {
+					"raw": "http://127.0.0.1:8000/product/?category_name=Pencil",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						""
+					],
+					"query": [
+						{
+							"key": "category_name",
+							"value": "Pencil",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODU2Nzg4LCJqdGkiOiI1ZjNiMDQzNjM3ZWY0ZjdjOTEzYjRlNjUxNTA1N2EyOSIsInVzZXJfaWQiOjF9.x1LaGZBWj5OyBc8g5kOg-EG05yBihllVzmru6MIjSDQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "detail_product",
+			"request": {
+				"url": "http://127.0.0.1:8000/product/4/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUyMjIwLCJqdGkiOiI1NWM0NDk2MmJjOWU0MWQ1YjRiNzUyMTU1NmNmY2IxNyIsInVzZXJfaWQiOjF9.3CPTQat3NfK86jfH2jGHfPGThW9iK2u6qhq6qUtbJRg",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update_product",
+			"request": {
+				"url": "http://127.0.0.1:8000/product/4/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUyMjIwLCJqdGkiOiI1NWM0NDk2MmJjOWU0MWQ1YjRiNzUyMTU1NmNmY2IxNyIsInVzZXJfaWQiOjF9.3CPTQat3NfK86jfH2jGHfPGThW9iK2u6qhq6qUtbJRg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Gel Pen",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "23",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete_product",
+			"request": {
+				"url": "http://127.0.0.1:8000/product/4/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjMwODUyMjIwLCJqdGkiOiI1NWM0NDk2MmJjOWU0MWQ1YjRiNzUyMTU1NmNmY2IxNyIsInVzZXJfaWQiOjF9.3CPTQat3NfK86jfH2jGHfPGThW9iK2u6qhq6qUtbJRg",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
